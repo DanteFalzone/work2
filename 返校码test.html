@@ -1,0 +1,36 @@
+<head>
+    <style>
+        div{
+            text-align: center;
+            font-size: 60px;
+            padding: 50px;
+            margin: auto;
+            width: 50%;
+            height:100px;
+
+           
+        }
+
+    </style>
+</head>
+<body>
+    <img src="上.png">
+    <div id="demo"></div>
+
+    <script>
+        
+      
+
+        var oBody = document.getElementById("demo");
+        window.onload = function() {
+            setInterval(update, 1000);
+
+            function update(){
+            var d = new Date();
+            oBody.innerHTML = + d.getHours() + ":" +  d.getMinutes() + ":" + d.getSeconds() + " " ;;}
+        }
+        
+    </script>
+    <br>
+
+</body>
